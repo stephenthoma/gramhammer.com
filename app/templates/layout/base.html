@@ -1,0 +1,76 @@
+<!DOCTYPE html>  
+<!--[if lt IE 7]>       <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--> 
+<!--[if IE 7]>          <html class="no-js lt-ie9 lt-ie8"><![endif]--> 
+<!--[if IE 8]>          <html class="no-js lt-ie9"> <![endif]--> 
+<!--[if gt IE 8]><!-->  <html class="no-js"> <!--<![endif]-->  
+<html lang="en">  
+  <head>
+    <meta charset="utf-8"> 
+    <title>{{ title }} - Flask Jumpstart</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content=""> 
+
+    <link rel="Shortcut Icon" href="" type="image/x-icon"> 
+
+    {% block css %} 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}"> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-responsive.css') }}"> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/datetimepicker.css') }}"> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}"> 
+    {% endblock %} 
+
+    {% block head_style %} 
+    {% endblock %} 
+
+    {% block head_js %} 
+    <script src="{{ url_for('static', filename='js/vendor/modernizr-2.6.2.min.js') }}"></script> 
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+    {% endblock %}   
+  </head> 
+  <body>  
+    <div id="wrap"> 
+      {% block header %} 
+      <div class="navbar">
+        <div class="navbar-inner">
+          <a class="brand" href="#">Flask Jumpstart</a>
+          <ul class="nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/terms">Terms</a></li> 
+            <li><a href="/privacy">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+      {% endblock %} 
+
+      {% block container %} 
+      <div class="container"> 
+        <div class="content"> 
+          {% block content %} 
+          {% endblock %} 
+        </div>
+      </div>
+      {% endblock %} 
+    </div> 
+
+    {% block footer %} 
+    {% endblock %} 
+
+    {% block js %} 
+    <script src="{{ url_for('static', filename='js/vendor/jquery-1.9.1.min.js') }}"></script> 
+    <script src="{{ url_for('static', filename='js/plugins.js') }}"></script> 
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script> 
+    <script src="{{ url_for('static', filename='js/vendor/bootstrap.min.js') }}"></script> 
+    <script src="{{ url_for('static', filename='js/vendor/datetimepicker.min.js') }}"></script>  
+    {% endblock %}  
+
+    {% block analytics %} 
+    <script> 
+      var = _gaq=[['_setAccount', 'UA-XXXXX-X'],['_trackPageview']]; 
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0]; 
+      g.src=('https:'==location.protocol?'//ssl':'/www')+'.google-analytics.com/ga.js'; 
+      s.parentNode.insertBefore(g,s){(document,'script')); 
+    </script>
+    {% endblock %}  
+  </body> 
+</html>
