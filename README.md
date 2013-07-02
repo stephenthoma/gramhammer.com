@@ -1,9 +1,9 @@
-# Flask Jumpstart #
+# Flask Jumpstart 
 
 A skeleton application to get you quickly developing with 
 [Flask](http://flask.pocoo.org). Ready for you to clone and deploy.  
 
-## Features ## 
+## Features  
 
 * Ready to deploy Flask application 
 * Utilizes Blueprints for easy addition of modules 
@@ -12,7 +12,7 @@ A skeleton application to get you quickly developing with
   template
 * Contact form
 
-## Extensions ## 
+## Extensions 
 
 * [Flask-Bcrypt](https://flask-bcrypt.readthedocs.org/en/latest/)
 * [Flask-Cache](http://pythonhosted.org/Flask-Cache/)
@@ -20,35 +20,41 @@ A skeleton application to get you quickly developing with
 * [Flask-SQLAlchemy](http://pythonhosted.org/Flask-SQLAlchemy/)
 * [Flask-WTF](http://pythonhosted.org/Flask-WTF/)
 
-## Installation ## 
+## Installation 
 
-Clone the project
+Clone the project:
+
     git clone https://github.com/natehefner/flask-jumpstart.git
 
-Set up a virtual environment 
+Set up a virtual environment:
+
     cd flask-jumpstart
     virtualenv env 
     . env/bin/activate
 
-Install requirements 
+Install requirements: 
+
     pip install -r requirements.txt 
 
-Run the program
+Run the program:
+
     python run.py 
 
-View it in your browser
+View it in your browser:
+
     http://localhost:5000
 
-## Testing ## 
+## Testing 
 
 
 
-## Coming Soon ## 
+## Coming Soon
 
 * Admin Blueprint 
 * Blog Blueprint
 * Deploy with [Fabric](http://github.com/fabric/fabric)
 
-## License ## 
+## License
+
 * No Warranty Expressed or Implied. Sofware is as is. 
 * [MIT License](http://http://opensource.org/licenses/mit-license.php) 
