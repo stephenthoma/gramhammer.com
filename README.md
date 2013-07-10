@@ -10,7 +10,8 @@ A skeleton application to get you quickly developing with
 * SQLALchemy DB support 
 * Responsive [Twitter Bootstrap](http://twitter.github.io/bootstrap/)
   template
-* Contact form
+* Contact form 
+* Adheres to the PEP8 Style Guide
 
 ## Extensions 
 
@@ -24,25 +25,35 @@ A skeleton application to get you quickly developing with
 
 Clone the project:
 
-    git clone https://github.com/natehefner/flask-jumpstart.git
+```
+git clone https://github.com/natehefner/flask-jumpstart.git
+```
 
 Set up a virtual environment:
 
-    cd flask-jumpstart
-    virtualenv env 
-    . env/bin/activate
+```
+cd flask-jumpstart
+virtualenv env 
+. env/bin/activate
+``` 
 
 Install requirements: 
 
-    pip install -r requirements.txt 
+```
+pip install -r requirements.txt 
+```
 
 Run the program:
 
-    python run.py 
+```
+python run.py 
+```
 
 View it in your browser:
 
-    http://localhost:5000
+```
+http://localhost:5000
+```
 
 ## Testing 
 

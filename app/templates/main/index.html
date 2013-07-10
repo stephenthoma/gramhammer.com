@@ -1,7 +1,44 @@
 {% extends 'layout/base.html' %} 
 
 {% block content %} 
+<div class="hero-unit"> 
+  <h1>Flask Jumpstart</h1> 
+  <p>A skeleton application to get you quickly developing with <a
+      href="http://flask.pocoo.org">Flask</a>. Ready for you to clone 
+    and deploy.</p> 
+  <p><a href="http://github.com/natehefner/flask-jumpstart"
+      class="btn btn-primary btn-large">Fork on Github</a></p>
+</div> 
 <div class="row-fluid"> 
-
+  <div class="span4"> 
+    <h2>Features</h2> 
+    <ul> 
+      <li>Ready to Deploy Flask Application</li> 
+      <li>Utilizes Blueprints for Flexibility</li> 
+      <li>User Blueprint</li>
+      <li>SQLAlchemy DB Support</li> 
+      <li>Responsive <a href="http://twitter.github.io/bootstrap">
+          Twitter Bootstrap</a> Template</li> 
+      <li>Contact Form</li> 
+    </ul> 
+  </div> 
+  <div class="span4"> 
+    <h2>Extensions</h2> 
+    <ul>
+      <li><a href="">Flask-Bcrypt</a></li>
+      <li><a href="">Flask-Cache</a></li>
+      <li><a href="">Flask-Mail</a></li>
+      <li><a href="">Flask-SQLAlchemy</a></li>
+      <li><a href="">Flask-WTF</a></li> 
+    </ul> 
+  </div> 
+  <div class="span4">
+    <h2>Coming Soon</h2>
+    <ul>
+      <li>Admin Blueprint</li>
+      <li>Blog Blueprint</li>
+      <li>Deploy with Fabric</li>
+    </ul>
+  </div>
 </div>
 {% endblock %}
