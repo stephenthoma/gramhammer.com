@@ -10,6 +10,8 @@ app.config.from_pyfile('config.py')
 
 # Extensions
 db.init_app(app)
+db.app = app
+db.create_all()
 
 # Blueprints
 app.register_blueprint(main)
