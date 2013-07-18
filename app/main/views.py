@@ -17,6 +17,14 @@ def login():
         pass
 
 
+@main.route('/register', methods=['GET', 'POST'])
+def register():
+    if request.method == 'GET':
+        return render_template('register.html', title='Register')
+    else:
+        pass
+
+
 @main.route('/about')
 def about():
     return render_template('about.html', title='About')
