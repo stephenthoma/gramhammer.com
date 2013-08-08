@@ -1,27 +1,20 @@
-# Flask Jumpstart 
+# Flask Jumpstart
 
-A skeleton application to get you quickly developing with 
-[Flask](http://flask.pocoo.org). Ready for you to clone and deploy.  
+My skeleton application to quickly start developing with
+[Flask](http://flask.pocoo.org). Ready for you to clone and deploy.
 
-## Features  
-
-* Ready to deploy Flask application 
-* Utilizes Blueprints for easy addition of modules 
-* SQLALchemy DB support 
-* Responsive [Twitter Bootstrap](http://twitter.github.io/bootstrap/)
-  template
-* Contact form 
-* Adheres to the PEP8 Style Guide
-
-## Extensions 
+## Extensions
 
 * [Flask-Bcrypt](https://flask-bcrypt.readthedocs.org/en/latest/)
 * [Flask-Cache](http://pythonhosted.org/Flask-Cache/)
-* [Flask-Mail](http://pythonhosted.org/flask-mail/) 
+* [Flask-Mail](http://pythonhosted.org/flask-mail/)
 * [Flask-SQLAlchemy](http://pythonhosted.org/Flask-SQLAlchemy/)
 * [Flask-WTF](http://pythonhosted.org/Flask-WTF/)
 
-## Installation 
+## Installation
+
+(Note: These are the instructions I use to get it running ubuntu,
+your exact instructions may vary)
 
 Clone the project:
 
@@ -33,20 +26,20 @@ Set up a virtual environment:
 
 ```
 cd flask-jumpstart
-virtualenv env 
+virtualenv env
 . env/bin/activate
-``` 
+```
 
-Install requirements: 
+Install requirements:
 
 ```
-pip install -r requirements.txt 
+pip install -r requirements.txt
 ```
 
 Run the program:
 
 ```
-python run.py 
+python run.py
 ```
 
 View it in your browser:
@@ -55,17 +48,15 @@ View it in your browser:
 http://localhost:5000
 ```
 
-## Testing 
+## Testing
 
 
 
 ## Coming Soon
 
-* Admin Blueprint 
-* Blog Blueprint
 * Deploy with [Fabric](http://github.com/fabric/fabric)
 
 ## License
 
-* No Warranty Expressed or Implied. Sofware is as is. 
-* [MIT License](http://http://opensource.org/licenses/mit-license.php) 
+* No Warranty Expressed or Implied. Sofware is as is.
+* [MIT License](http://http://opensource.org/licenses/mit-license.php)
