@@ -6,6 +6,9 @@
 # Virtualenv
 env
 
+# Tmp
+tmp
+
 # Packages
 *.egg
 *.egg-info

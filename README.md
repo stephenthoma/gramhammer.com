@@ -9,11 +9,10 @@ My skeleton application to quickly start developing with
 * [Flask-Cache](http://pythonhosted.org/Flask-Cache/)
 * [Flask-Mail](http://pythonhosted.org/flask-mail/)
 * [Flask-SQLAlchemy](http://pythonhosted.org/Flask-SQLAlchemy/)
-* [Flask-WTF](http://pythonhosted.org/Flask-WTF/)
 
 ## Installation
 
-(Note: These are the instructions I use to get it running ubuntu,
+(Note: These are the instructions I use to get it running Ubuntu,
 your exact instructions may vary)
 
 Clone the project:
@@ -27,7 +26,7 @@ Set up a virtual environment:
 ```
 cd flask-jumpstart
 virtualenv env
-. env/bin/activate
+source env/bin/activate
 ```
 
 Install requirements:
