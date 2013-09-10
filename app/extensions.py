@@ -15,7 +15,7 @@ assets = Environment()
 js_libs = Bundle('js/libs/jquery.js', 'js/libs/underscore.js',
                  'js/libs/backbone.js', 'js/libs/bootstrap.js',
                  'js/libs/bootstrap.js', filters='jsmin',
-                 output='gen/libs.js')
+                 output='../public/libs.js')
 js_main = Bundle('js/app.js', 'js/main.js', filters='jsmin',
-                 output='gen/main.js')
-less = Bundle('less/main.less', filters='less', output='gen/main.css')
+                 output='../public/main.js')
+less = Bundle('less/main.less', filters='less', output='../public/main.css')
