@@ -12,10 +12,10 @@ bcrypt = Bcrypt()
 assets = Environment()
 
 ## Assets ##
-js_libs = Bundle('js/libs/jquery.js', 'js/libs/underscore.js',
-                 'js/libs/backbone.js', 'js/libs/bootstrap.js',
-                 'js/libs/bootstrap.js', filters='jsmin',
-                 output='../public/libs.js')
-js_main = Bundle('js/app.js', 'js/main.js', filters='jsmin',
-                 output='../public/main.js')
-less = Bundle('less/main.less', filters='less', output='../public/main.css')
+js_libs = Bundle('dev/js/libs/jquery.js', 'dev/js/libs/underscore.js',
+                 'dev/js/libs/backbone.js', 'dev/js/libs/bootstrap.js',
+                 'dev/js/libs/bootstrap.js', filters='jsmin',
+                 output='prod/libs.js')
+js_main = Bundle('dev/js/app.js', 'dev/js/main.js', filters='jsmin',
+                 output='prod/main.js')
+less = Bundle('dev/less/main.less', filters='less', output='prod/main.css')
