@@ -19,3 +19,7 @@ pip-log.txt
 .coverage
 .tox
 nosetests.xml
+
+# Text Editors
+*.sublime-project
+*.sublime-workspace
