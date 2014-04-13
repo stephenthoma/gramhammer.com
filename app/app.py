@@ -1,8 +1,7 @@
 import os
 
 from flask import Flask
-from extensions import db, assets
-from extensions import js_libs, js_main, less
+from extensions import db
 from blueprints.about import about
 from blueprints.accounts import accounts
 from blueprints.api import api
@@ -13,21 +12,14 @@ app = Flask(__name__, static_folder='static',
 
 ## Config ##
 flask_env = os.environ.get('FLASK_ENV')
-
 if flask_env is None:
-    app.config.from_object('app.config.DevelopmentConfig')
+    app.config.from_pyfile('config/dev.py')
 else:
-    app.config.from_pyfile('app.config.%sConfig') % flask_env
+    app.config.from_pyfile('config/' + flask_env + '.py')
 
 ## Database ##
 db.init_app(app)
 db.app = app
-
-## Assets ##
-assets.init_app(app)
-assets.register('js_libs', js_libs)
-assets.register('js_main', js_main)
-assets.register('css_main', less)
 
 ## Blueprints ##
 app.register_blueprint(about, url_prefix='/about')

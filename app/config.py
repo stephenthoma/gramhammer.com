@@ -16,3 +16,4 @@ class ProductionConfig(Config):
 class DevelopmentConfig(Config):
     '''Development Config Object'''
     DEBUG = True
+    MONGODB_SETTINGS = {'DB': "flask-jumpstart"}
