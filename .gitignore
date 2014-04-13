@@ -23,3 +23,9 @@ nosetests.xml
 # Text Editors
 *.sublime-project
 *.sublime-workspace
+
+# Node
+node_modules
+
+# Bower
+bower_components
