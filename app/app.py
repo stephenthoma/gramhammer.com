@@ -13,10 +13,11 @@ app = Flask(__name__, static_folder='static',
 
 ## Config ##
 flask_env = os.environ.get('FLASK_ENV')
+
 if flask_env is None:
-    app.config.from_pyfile('config/dev.py')
+    app.config.from_object('app.config.DevelopmentConfig')
 else:
-    app.config.from_pyfile('config/' + flask_env + '.py')
+    app.config.from_pyfile('app.config.%sConfig') % flask_env
 
 ## Database ##
 db.init_app(app)
