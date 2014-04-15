@@ -3,6 +3,7 @@ import os
 from flask import Flask
 from app.extensions import db
 from app.blueprints.home.views import home
+from app.blueprints.auth.views import auth
 
 ## App ##
 app = Flask(__name__, static_folder='static',
@@ -22,3 +23,4 @@ db.app = app
 
 ## Blueprints ##
 app.register_blueprint(home)
+app.register_blueprint(auth, url_prefix='/api/auth')
