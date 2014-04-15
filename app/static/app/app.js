@@ -12,6 +12,14 @@ angular.module('flaskJumpstart', [
         title: 'Welcome',
         templateUrl: 'static/app/views/home.html',
       })
+      .when('/login', {
+        title: 'Log In',
+        templateUrl: 'static/app/views/login.html'
+      })
+      .when('/register', {
+        title: 'Register',
+        templateUrl: 'static/app/views/register.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
