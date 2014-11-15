@@ -1,9 +1,9 @@
 import os
 
 from flask import Flask
-from app.extensions import db
-from app.blueprints.home.views import home
-from app.blueprints.auth.views import auth
+from extensions import db
+from blueprints.home.views import home
+from blueprints.auth.views import auth
 
 ## App ##
 app = Flask(__name__, static_folder='static',
