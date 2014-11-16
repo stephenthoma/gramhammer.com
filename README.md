@@ -54,4 +54,4 @@ python manage.py test [--coverage]
 ## License
 
 * No Warranty Expressed or Implied. Sofware is as is.
-* [MIT License](http://http://opensource.org/licenses/mit-license.php)
+* [MIT License](http://opensource.org/licenses/mit-license.php)
