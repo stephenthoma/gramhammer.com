@@ -4,6 +4,7 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
+var karma = require('karma').server;
 
 var paths = {
   scripts: 'app/static/js/**/*',
@@ -11,6 +12,19 @@ var paths = {
   bootstrap: 'app/static/bower_components/sass-bootstrap/lib/*',
   images: 'app/static/img/**/*'
 };
+
+gulp.task('test', function () {
+  karma.start({
+    configFile: __dirname + '/karma.conf.js',
+    singleRun: true
+  });
+});
+
+gulp.task('tdd', function (done) {
+  karma.start({
+    configFile: __dirname + '/karma.conf.js'
+  });
+});
 
 gulp.task('styles', function () {
   gulp.src(paths.styles)
@@ -48,4 +62,4 @@ gulp.task('watch', function() {
   gulp.watch(paths.images, ['images']);
 });
 
-gulp.task('default', ['styles', 'vendor-styles', 'scripts', 'images', 'watch']);
+gulp.task('default', ['styles', 'vendor-styles', 'scripts', 'images', 'watch', 'tdd']);
