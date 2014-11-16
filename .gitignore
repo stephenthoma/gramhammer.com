@@ -20,10 +20,6 @@ pip-log.txt
 .tox
 nosetests.xml
 
-# Text Editors
-*.sublime-project
-*.sublime-workspace
-
 # Node
 node_modules
 
