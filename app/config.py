@@ -25,6 +25,7 @@ class DevelopmentConfig(Config):
 class TestingConfig(Config):
     '''Testing Config Object'''
     TESTING = True
+    MONGODB_SETTINGS = {'DB': "flask-jumpstart"}
 
 config = {
         'default': DevelopmentConfig,
