@@ -44,6 +44,14 @@ View it in your browser:
 http://localhost:5000
 ```
 
+Secret keys can be stored in an `.env-vars` file which the `manage.py` script will
+load into the Python environment at run-time. The file should be in the format:
+
+```
+FLASK_CONFIG=development
+SECRET_KEY=hunter2
+```
+
 ## Testing
 Tests for the Flask backend can be run using:
 
