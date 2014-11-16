@@ -1,44 +1,41 @@
 # Flask Jumpstart
 
-My skeleton application to quickly start developing with
-[Flask](http://flask.pocoo.org). Ready for you to clone and deploy.
+Fork of natehefner's skeleton application with some *very opinionated* changes.
+Enables quickly starting development of web-applications with a
+[Flask](http://flask.pocoo.org) + [Angular](http://angularjs.org) stack.
 
 ## Extensions
 
 * [Flask-Bcrypt](https://flask-bcrypt.readthedocs.org/en/latest/)
-* [Flask-Cache](http://pythonhosted.org/Flask-Cache/)
 * [Flask-Mail](http://pythonhosted.org/flask-mail/)
-* [Flask-SQLAlchemy](http://pythonhosted.org/Flask-SQLAlchemy/)
 
 ## Installation
-
-(Note: These are the instructions I use to get it running Ubuntu,
-your exact instructions may vary)
+Instructions for getting up and running in an OS X environment with
+[virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/)
 
 Clone the project:
 
 ```
-git clone https://github.com/natehefner/flask-jumpstart.git
+git clone https://github.com/sthoma/flask-jumpstart.git
 ```
 
 Set up a virtual environment:
 
 ```
 cd flask-jumpstart
-virtualenv env
-source env/bin/activate
+mkvirtualenv jumpstart
 ```
 
 Install requirements:
 
 ```
-pip install -r requirements.txt
+pip install -r requirements/dev.txt
 ```
 
-Run the program:
+Run the development webserver:
 
 ```
-python run.py
+python manage.py runserver
 ```
 
 View it in your browser:
@@ -48,12 +45,11 @@ http://localhost:5000
 ```
 
 ## Testing
+Tests for the Flask backend can be run using:
 
-
-
-## Coming Soon
-
-* Deploy with [Fabric](http://github.com/fabric/fabric)
+```
+python manage.py test [--coverage]
+```
 
 ## License
 
