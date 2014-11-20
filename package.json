@@ -1,5 +1,5 @@
 {
-  "name": "flask-jumpstart",
+  "name": "instasucc",
   "version": "0.0.0",
   "dependencies": {
     "gulp": "~3.8.10",

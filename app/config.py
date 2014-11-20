@@ -28,13 +28,13 @@ class ProductionConfig(Config):
 class DevelopmentConfig(Config):
     '''Development Config Object'''
     DEBUG = True
-    MONGODB_SETTINGS = {'DB': "flask-jumpstart"}
+    MONGODB_SETTINGS = {'DB': "instasucc"}
 
 
 class TestingConfig(Config):
     '''Testing Config Object'''
     TESTING = True
-    MONGODB_SETTINGS = {'DB': "flask-jumpstart"}
+    MONGODB_SETTINGS = {'DB': "instasucc"}
 
 config = {
         'default': DevelopmentConfig,
