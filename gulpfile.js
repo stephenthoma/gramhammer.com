@@ -10,6 +10,7 @@ var paths = {
   scripts: 'app/static/js/**/*',
   styles: 'app/static/scss/**/*',
   bootstrap: 'app/static/bower_components/sass-bootstrap/lib/*',
+  font_awesome: 'app/static/bower_components/font-awesome/css/font-awesome.css',
   images: 'app/static/img/**/*'
 };
 
@@ -34,7 +35,7 @@ gulp.task('styles', function () {
 });
 
 gulp.task('vendor-styles', function() {
-  gulp.src(paths.bootstrap)
+  gulp.src([paths.bootstrap, paths.font_awesome])
     .pipe(sass())
     .pipe(concat('vendor.css'))
     .pipe(gulp.dest('app/static/dist/css'));
@@ -62,4 +63,4 @@ gulp.task('watch', function() {
   gulp.watch(paths.images, ['images']);
 });
 
-gulp.task('default', ['styles', 'vendor-styles', 'scripts', 'images', 'watch', 'tdd']);
+gulp.task('default', ['styles', 'vendor-styles', 'scripts', 'images', 'watch']);
