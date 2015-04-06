@@ -2,17 +2,21 @@ import os
 from flask import Flask
 from flask.ext.mail import Mail
 
-from config import config
-from extensions import db
+from app.config import config
+from app.extensions import db
 
-from blueprints.home.views import home
-from blueprints.auth.views import auth
+from app.blueprints.home.views import home
+from app.blueprints.auth.views import auth
+from app.blueprints.image.views import image
 
 def register_blueprints(app):
+    """Register the diverse sets of blueprints with the flask app."""
     app.register_blueprint(home)
     app.register_blueprint(auth, url_prefix='/api/auth')
+    app.register_blueprint(image, url_prefix='/api/image')
 
 def create_app(config_name):
+    """Initialize the flask app with external configuration."""
     ## App ##
     app = Flask(__name__, static_folder='static',
                 template_folder='templates')
