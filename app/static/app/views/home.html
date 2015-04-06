@@ -1,3 +1,31 @@
-<div class="container">
-  <h1>Test</h1>
+<div class="container" ng-controller="ImageCtrl">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="image-topper">
+          <img class="current-avatar" ng-src="{{image.avatar}}">
+          <span class="current-user" ng-bind="image.user"></span>
+      </div>
+      <div class="row">
+        <div id="current-image" class="col-md-12">
+          <img ng-src="{{image.url}}">
+        </div>
+      </div>
+      <div class="row image-bottom">
+        <div class="image-buttons">
+          <div class="col-md-2 col-md-offset-8">
+            <span ng-click="nextImage()" class="fa-stack fa-2x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-remove fa-stack-1x fa-inverse"></i>
+            </span>
+          </div>
+          <div class="col-md-2">
+            <span ng-click="likeImage()" class="fa-stack fa-2x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

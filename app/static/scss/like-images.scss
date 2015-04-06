@@ -1,0 +1,46 @@
+.image-topper {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: table;
+  & span {
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 400;
+    font-size: 20px;
+  }
+}
+
+.current-avatar {
+  float: left;
+  border-radius: 50%;
+  width: 40px;
+}
+
+.image-bottom {
+  padding-top: 8px;
+}
+
+.image-buttons i{
+  cursor: pointer;
+  transition: all 0.3s;
+  &.fa-remove:hover {
+    color: rgba(213,74,56,1);
+  }
+  &.fa-remove:active {
+    color: rgba(163,26,12,1);
+  }
+  &.fa-check:hover {
+    color: rgba(167,205,44,1);
+  }
+  &.fa-check:active {
+    color: rgba(77, 198, 38, 1.0);
+  }
+}
+
+
+#current-image {
+  padding: 0px;
+}
+#current-image img {
+  width: 100%;
+}

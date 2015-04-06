@@ -17,18 +17,23 @@ module.exports = function(config) {
     files: [
       'app/static/bower_components/angular/angular.js',
       'app/static/bower_components/angular-mocks/angular-mocks.js',
-      'app/static/bower_components/angular-cookies/angular-cookies.js',
       'app/static/bower_components/angular-route/angular-route.js',
+      'app/static/bower_components/angular-resource/angular-resource.js',
+      'app/static/bower_components/angular-sanitize/angular-sanitize.js',
       'app/static/bower_components/jquery/dist/jquery.js',
       'app/static/bower_components/sass-bootstrap/dist/bootstrap.js',
-      'tests/frontend_tests/*Spec.js',
+      'app/static/app/app.js',
+      'app/static/app/rate/imageController.js',
+      'app/static/app/rate/imageService.js',
+      'tests/frontend_tests/*spec.js',
       'app/static/js/*.js'
     ],
 
 
     // list of files to exclude
     exclude: [
-      '**/*.swp'
+      '**/*.swp',
+      'karma.conf.js'
     ],
 
 

@@ -10,6 +10,7 @@ angular.module('gramhammer', [
       .when('/', {
         title: 'Welcome',
         templateUrl: 'static/app/views/home.html',
+        controller: ImageCtrl
       })
       .when('/login', {
         title: 'Log In',
@@ -46,3 +47,4 @@ angular.module('gramhammer', [
     });
 
   });
+
