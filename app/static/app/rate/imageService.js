@@ -7,7 +7,7 @@ angular.module('gramhammer')
       var service = {};
 
       service.getImage = function () {
-        return $http.get('/api/image');
+        return $http.get('/api/image/');
       };
 
       service.likeImage = function (imageId) {
