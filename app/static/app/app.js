@@ -1,7 +1,6 @@
 'use strict';
 
-angular.module('flaskJumpstart', [
-  'ngCookies',
+angular.module('gramhammer', [
   'ngResource',
   'ngSanitize',
   'ngRoute'

@@ -1,6 +1,5 @@
 import os
 
-
 class Config(object):
     ''' Default Config Object '''
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'hunter2'
@@ -15,6 +14,12 @@ class Config(object):
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
 
+    INSTA_CONFIG = {
+        'client_id': os.environ.get('CLIENT_ID'),
+        'client_secret': os.environ.get('CLIENT_SECRET'),
+        'redirect_uri': os.environ.get('REDIRECT_URI')
+        }
+
     @staticmethod
     def init_app(app):
         pass
@@ -28,17 +33,17 @@ class ProductionConfig(Config):
 class DevelopmentConfig(Config):
     '''Development Config Object'''
     DEBUG = True
-    MONGODB_SETTINGS = {'DB': "instasucc"}
+    MONGODB_SETTINGS = {'DB': "gramhammer"}
 
 
 class TestingConfig(Config):
     '''Testing Config Object'''
     TESTING = True
-    MONGODB_SETTINGS = {'DB': "instasucc"}
+    MONGODB_SETTINGS = {'DB': "gramhammer"}
 
 config = {
-        'default': DevelopmentConfig,
-        'production': ProductionConfig,
-        'development': DevelopmentConfig,
-        'testing': TestingConfig
-        }
+    'default': DevelopmentConfig,
+    'production': ProductionConfig,
+    'development': DevelopmentConfig,
+    'testing': TestingConfig
+    }
